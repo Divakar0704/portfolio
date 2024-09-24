@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+}
+
+/* Navbar Styles */
+nav {
+  width: 20%;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2rem solid rgb(106, 95, 95);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Content Wrapper */
+.remain {
+  width: 80%;
+  margin-left: 20%;
+  padding: 20px;
+}
+
+/* Home Section */
+.section {
+  padding: 40px 0;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-left: 2rem;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.matter {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* About Me Section */
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.imgme img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+
+/* Projects Section */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects h2{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+.project-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 2rem;
+  margin-bottom: 20px;
+  width: calc(50% - 20px);
+  text-align: center;
+}
+
+.project-item img {
+  max-width: 100%;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #333;
+  margin-right: 20px;
+  font-size: 30px;
+}
+#experience{
+    width: auto;
+    height: 40vh;
+}
+#experience p,#experience h2{
+  display: flex;
+  align-items: center;
+}
+.social-icons a:hover {
+  color: #0682ff;
+}
+
+/* Experience Section */
+#experience p {
+  font-size: 1.2rem;
+}
