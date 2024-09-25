@@ -13,7 +13,7 @@ body {
 nav {
   width: 20%;
   height: 100vh;
-  background-color: #333;
+  background-color: #ECDFCC;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,6 +21,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-right: 0.2rem solid rgb(106, 95, 95);
+  transition: width 0.3s ease;
 }
 
 nav ul {
@@ -32,9 +33,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgba(0, 0, 0, 0.832);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 800;
   padding: 15px;
   display: block;
   text-align: center;
@@ -44,11 +46,88 @@ nav ul li a:hover {
   background-color: #555;
 }
 
+/* Hide menu icon by default */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
 /* Main Content Wrapper */
 .remain {
   width: 80%;
   margin-left: 20%;
   padding: 20px;
+  transition: margin-left 0.3s ease;
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    width: 60px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .remain {
+    margin-left: 60px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+}
+
+/* Section Background Colors */
+#home {
+  color: #fff;
+}
+
+#about {
+  background-color: #333;
+  color: #fff;
+  font-size: 25px;
+  width: auto;
+  height: 90vh;
+}
+#about h2{
+  font-size: 35px;
+}
+
+#projects {
+  background-color: #333;
+  color: #fff;
+  font-size: 25px;
+  width: auto;
+  height: 100vh;
+}
+#project img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#experience {
+  background-color: #333;
+  color: #fff;
+}
+
+.contact {
+  background-color: #fff;
+  color: #333;
 }
 
 /* Home Section */
@@ -77,9 +156,9 @@ nav ul li a:hover {
 }
 
 .highlight {
-  color: rgb(255, 0, 0);
+  color: #ffffff;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -114,13 +193,15 @@ nav ul li a:hover {
 }
 
 /* Projects Section */
-.project-list {
+.projects .h1 {
+  margin: 5rem 0 0 0;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
   display: flex;
-  flex-wrap: wrap;
-}
-#projects h2{
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 6rem; */
 }
 .project-item {
   background-color: #f4f4f4;
@@ -134,27 +215,60 @@ nav ul li a:hover {
 
 .project-item img {
   max-width: 100%;
-}
-
-/* Social Icons */
-.social-icons a {
-  color: #333;
-  margin-right: 20px;
-  font-size: 30px;
-}
-#experience{
-    width: auto;
-    height: 40vh;
-}
-#experience p,#experience h2{
   display: flex;
-  align-items: center;
-}
-.social-icons a:hover {
-  color: #0682ff;
+  justify-content: center;
+  align-items: c;
 }
 
 /* Experience Section */
-#experience p {
-  font-size: 1.2rem;
+#experience {
+  width: auto;
+  height: 95vh;
+}
+.skills{
+  margin-top: 6rem;
+}
+.skills-icons {
+  display: flex;
+  justify-content:flex-start;
+  margin-left: 1rem;
+  font-size: 3.5rem;
+  color: #000000;
+}
+.skills-icons i{
+  margin-left: 4rem;
+  color: #000000;
+}
+
+
+/* Social Icons */
+.social-icons a {
+  color: #000000;
+  margin-right: 20px;
+  font-size: 2rem;
+}
+.gap{
+  border-top: 3px solid white;
+  width: auto;
+  height: 3.5px;
+  border-radius: 25px;
+}
+#contact{
+  background-color: #333;
+}
+
+.social-icons,#contact h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.6);
+}
+.skills-icons i:hover {
+  transform: scale(1.3);
 }
