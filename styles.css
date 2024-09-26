@@ -112,11 +112,8 @@ nav ul li a:hover {
   color: #fff;
   font-size: 25px;
   width: auto;
-<<<<<<< HEAD
   height: 90vh;
-=======
   height: 85vh;
->>>>>>> c517f233699ee4e5f87877ff9ab83fdee1dc641c
 }
 #project img{
   display: flex;
