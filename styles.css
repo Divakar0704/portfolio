@@ -131,9 +131,12 @@ nav ul li a:hover {
   color: #333;
 }
 
+.section p {
+  font-size: 1.6rem;
+}
 /* Home Section */
-.section {
-  padding: 40px 0;
+.section span {
+  font-size: 4rem;
 }
 
 #home {
@@ -188,9 +191,11 @@ nav ul li a:hover {
 }
 
 .imgme img {
-  max-width: 300px;
-  border-radius: 45%;
+  max-width: 19rem;
+  height: 18rem;
+  border-radius: 50%;
   margin-right: 10%;
+  margin-left: 10%;
 }
 
 /* Projects Section */
@@ -214,11 +219,10 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.project-item img {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: c;
+.imgpro {
+  max-width: 40%;
+  display: grid;
+  grid: 1fr 1fr 1fr ;
 }
 
 /* Experience Section */
