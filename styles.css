@@ -189,7 +189,7 @@ nav ul li a:hover {
 
 .imgme img {
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 45%;
   margin-right: 10%;
 }
 
@@ -247,7 +247,7 @@ nav ul li a:hover {
 }
 .skills-icons i{
   margin-left: 4rem;
-  color: #000000;
+  color: #C4A484;
 }
 
 
